@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+/* Custom styles */
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* Ensure content doesn't hide behind navbar */
+main {
+    padding-top: 80px;
+}
+
+/* Animation classes */
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
